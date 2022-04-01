@@ -14,10 +14,11 @@
   display: inline-block;
 }
 
-.btn-gold:hover {
+.btn-gold:hover, .btn-gold:active {
   box-shadow: 0 0 30px 10px rgba(243, 182, 128, 0.1);
   transform: translateY(-1px);
   transition: all .15s linear 0s;
+  background-color: rgba(243, 182, 128, 0.77);
 }
 
 .img-placeholder {
@@ -42,7 +43,7 @@
 /* Global CSS */
 
 body {
-  background: #060606;
+  background: #0D0D0D;
   color: white;
   font-family: 'Open Sans';
   font-size: 18px;
@@ -50,6 +51,7 @@ body {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color:  white;
   font-weight:  600;
 }
@@ -64,6 +66,7 @@ h1 {
 
 h2 {
   font-size: 36px;
+  color: #E5E5E5;
 }
 
 .text-center {
@@ -97,7 +100,7 @@ h2 {
 /* Introduction */
 
 .introduction {
-  margin: 30px auto;
+  margin: 100px auto 200px;
 }
 
 .introduction .container {
@@ -159,7 +162,7 @@ h2 {
 /* last section*/
 
 .last-section {
-  margin-top: 40px;
+  margin-top: 180px;
 }
 
 .last-section h2 {
@@ -186,6 +189,30 @@ h2 {
 
 .last-section-form .img-placeholder {
   display: none;
+}
+
+/* footer*/
+h3 {
+  text-align: center;
+  border-top: 0.5px solid #E5E5E5;
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  padding: 0px 25px;
+  font-size: 35px;
+}
+
+i:hover, i:active {
+color: #F3B680;
+transition: color 0.3s ease;
 }
 
 /* Responsiveness*/
@@ -227,25 +254,65 @@ h2 {
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 400px;
+    width: 340px;
   }
+
+  .introduction {
+    margin: 30px auto 100px;
+    width: 340px;
+  }
+
+  .introduction .container {
+    display: unset;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
+
   .img-placeholder {
-    display:  none;
+    width: 100%;
+    margin-top: 30px;
   }
+
   .last-section-info {
     margin: 40px 0;
     text-align: left;
   }
+
   .introduction-info {
     text-align: center;
     margin-right: 5px;
   }
+
   .offer {
     margin-top: 50px;
-  } 
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .navbar a {
+    color: white;
+    background-color: #0D0D0D;
+    width: unset;
+
+  }
+  a {
+    width: 76%;
+    text-transform: none;
+    font-size: 16px;
+  }
+
+  .card img {
+    width: 90px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -257,14 +324,3 @@ h2 {
     width: 70%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
