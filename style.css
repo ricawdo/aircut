@@ -2,7 +2,15 @@
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 /* Components */
 
 .btn-gold {
@@ -183,6 +191,7 @@ h2 {
 
 .card h3 {
   font-weight: 700;
+  font-size: 19px;
 }
 
 .offer-btn {
@@ -212,8 +221,6 @@ h2 {
 .last-section-form .form {
   border-radius: 4px;
   padding: 8px;
-  margin: 8px;
-  border:  1px solid #F3B680;
   margin: 50px 0;
   background-color: #ffead6;
 }
@@ -239,22 +246,13 @@ h3 {
 .social-media img{
   width: 30px;
   padding: 0px 10px;
-  filter: invert(97%) sepia(99%) saturate(933%) hue-rotate(301deg) brightness(104%) contrast(104%);
+  filter: invert(92%) sepia(7%) saturate(1974%) hue-rotate(311deg) brightness(107%) contrast(106%);
 }
 
 .social-media img:hover, .social-media img:active {
   transform: translateY(-1px);
   transition: all .15s linear 0s;
   filter: invert(77%) sepia(52%) saturate(486%) hue-rotate(325deg) brightness(99%) contrast(92%);
-}
-i {
-  padding: 0px 25px;
-  font-size: 35px;
-}
-
-i:hover, i:active {
-color: #F3B680;
-transition: color 0.3s ease;
 }
 
 #insta {
