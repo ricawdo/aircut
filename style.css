@@ -119,6 +119,18 @@ h2 {
   margin-bottom: 40px;
 }
 
+.second-slide {
+  background-color: #ffead6;
+  padding: 1px;
+}
+
+.second-slide h2 {
+  color: #070707;
+}
+
+.second-slide p {
+  color: #070707;
+}
 /* cards */
 
 .cards {
@@ -131,8 +143,15 @@ h2 {
   border-radius: 4px;
   padding: 36px;
   margin: 8px;
-  border:  1px solid #F3B680;
   text-align: center;
+  border: #F3B680;
+  text-align: center;
+  background-color: #070707;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.card p {
+  color: white;
 }
 
 .cards-btn {
