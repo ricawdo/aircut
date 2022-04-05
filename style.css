@@ -66,7 +66,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  color: #E5E5E5;
+  color: white;
 }
 
 .text-center {
@@ -227,8 +227,8 @@ h3 {
   text-align: center;
   border-top: 0.5px solid #E5E5E5;
   padding-top: 10px;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 14px;
 }
 .social-media {
   list-style: none;
@@ -236,6 +236,17 @@ h3 {
   justify-content: center;
 }
 
+.social-media img{
+  width: 30px;
+  padding: 0px 10px;
+  filter: invert(97%) sepia(99%) saturate(933%) hue-rotate(301deg) brightness(104%) contrast(104%);
+}
+
+.social-media img:hover, .social-media img:active {
+  transform: translateY(-1px);
+  transition: all .15s linear 0s;
+  filter: invert(77%) sepia(52%) saturate(486%) hue-rotate(325deg) brightness(99%) contrast(92%);
+}
 i {
   padding: 0px 25px;
   font-size: 35px;
@@ -246,6 +257,15 @@ color: #F3B680;
 transition: color 0.3s ease;
 }
 
+#insta {
+  background-image: url(images/instagram_icon.png);
+}
+
+h4 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
 /* Responsiveness*/
 
 @media (max-width: 900px) {
@@ -324,10 +344,6 @@ transition: color 0.3s ease;
     font-size: 32px;
   }
 
-  h2 {
-    font-size: 32px;
-    font-weight: 700;
-  }
 
   .navbar a {
     color: white;
