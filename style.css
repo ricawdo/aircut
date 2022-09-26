@@ -30,10 +30,10 @@ html {
 }
 
 .img-placeholder {
-  background-image: radial-gradient(circle, rgba(0,0,0,0.40518205573244925) 46%, rgba(243,182,128,0.22591034704897583) 79%), url('images/placeholder.jpg');
+  background-image: url('images/interior_1.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 300px;
   width: 800px;
   border-radius: 4px;
@@ -48,10 +48,11 @@ html {
   font-size: 32px;
 }
 
+
 /* Global CSS */
 
 body {
-  background: #0D0D0D;
+  background: #000001;
   color: white;
   font-family: 'Open Sans';
   font-size: 18px;
